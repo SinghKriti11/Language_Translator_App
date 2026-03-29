@@ -104,3 +104,7 @@ body{
   color: #555;
   transition: 0.2s;
 }
+
+.exchange:hover{
+  color: #5372F0;
+}
