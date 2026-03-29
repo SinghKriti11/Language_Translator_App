@@ -150,3 +150,7 @@ button:disabled{
 .status.loading{
   color: #5372F0;
 }
+
+.status.error{
+  color: #e74c3c;
+}
