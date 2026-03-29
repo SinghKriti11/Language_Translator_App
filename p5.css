@@ -76,3 +76,9 @@ body{
   outline: none;
   background: transparent;
 }
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
