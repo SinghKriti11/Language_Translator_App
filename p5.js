@@ -43,3 +43,8 @@ translateBtn.addEventListener("click", async () => {
         translateTo = selectTag[1].value;
 
     if (!text) return;
+    toText.value = "";
+    toText.setAttribute("placeholder", "Translating...");
+    statusText.innerText = "Translating...";
+    statusText.className = "status loading";
+    translateBtn.disabled = true;
