@@ -82,3 +82,10 @@ body{
   align-items: center;
   gap: 8px;
 }
+
+.icons i{
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: 0.2s;
+}
