@@ -36,6 +36,7 @@ body{
   overflow: hidden;
 }
 
+
 .text-input{
   display: flex;
   border-bottom: 1px solid #ccc;
@@ -54,6 +55,7 @@ body{
 .text-input .to-text{
   border-left: 1px solid #ccc;
 }
+
 
 .controls{
   display: flex;
@@ -77,6 +79,7 @@ body{
   background: transparent;
 }
 
+
 .icons{
   display: flex;
   align-items: center;
@@ -94,6 +97,7 @@ body{
   color: #5372F0;
 }
 
+
 .exchange{
   display: flex;
   align-items: center;
@@ -109,6 +113,7 @@ body{
   color: #5372F0;
 }
 
+
 .controls .row.from{
   border-right: 1px solid #ccc;
   padding-right: 10px;
@@ -118,6 +123,7 @@ body{
   border-left: 1px solid #ccc;
   padding-left: 10px;
 }
+
 
 button{
   width: 100%;
@@ -141,6 +147,7 @@ button:disabled{
   cursor: not-allowed;
 }
 
+
 .status{
   margin-top: 10px;
   font-size: 14px;
@@ -159,14 +166,22 @@ button:disabled{
   content: " ⏳";
 }
 
+
 @media(max-width: 600px){
   .text-input{
     flex-direction: column;
   }
+
   .text-input .to-text{
     border-left: none;
     border-top: 1px solid #ccc;
   }
+
+  .controls{
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .controls .row{
     width: 100%;
   }
