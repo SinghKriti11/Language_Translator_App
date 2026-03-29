@@ -83,3 +83,16 @@ translateBtn.addEventListener("click", async () => {
         translateBtn.disabled = false;
     }
 });
+
+icons.forEach(icon => {
+    icon.addEventListener("click", ({ target }) => {
+        if (!fromText.value && !toText.value) return;
+
+        // Copy
+        if (target.classList.contains("fa-copy")) {
+            let textToCopy =
+                target.id === "from" ? fromText.value : toText.value;
+
+            navigator.clipboard.writeText(textToCopy);
+            statusText.innerText = "Copied to clipboard ✅";
+        }
