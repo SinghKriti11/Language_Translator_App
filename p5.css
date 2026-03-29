@@ -35,3 +35,8 @@ body{
   border: 1px solid #ccc;
   overflow: hidden;
 }
+
+.text-input{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
