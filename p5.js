@@ -50,3 +50,21 @@ translateBtn.addEventListener("click", async () => {
     translateBtn.disabled = true;
 
     let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
+
+    try {
+        let res = await fetch(apiUrl);
+
+        if (!res.ok) throw new Error("Network error");
+
+        let data = await res.json();
+
+        if (!data.responseData.translatedText)
+            throw new Error("Translation failed");
+
+        toText.value = data.responseData.translatedText;
+
+        data.matches.forEach(match => {
+            if (match.id === 0) {
+                toText.value = match.translation;
+            }
+        });
