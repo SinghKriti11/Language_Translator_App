@@ -158,3 +158,8 @@ button:disabled{
 .status.loading::after{
   content: " ⏳";
 }
+
+@media(max-width: 600px){
+  .text-input{
+    flex-direction: column;
+  }
