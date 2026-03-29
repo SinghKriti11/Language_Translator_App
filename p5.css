@@ -118,3 +118,16 @@ body{
   border-left: 1px solid #ccc;
   padding-left: 10px;
 }
+
+button{
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #5372F0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
