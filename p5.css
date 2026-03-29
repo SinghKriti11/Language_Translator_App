@@ -29,3 +29,9 @@ body{
 .container h2{
   margin-bottom: 20px;
 }
+
+.wrapper{
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
