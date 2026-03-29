@@ -43,6 +43,7 @@ translateBtn.addEventListener("click", async () => {
         translateTo = selectTag[1].value;
 
     if (!text) return;
+
     toText.value = "";
     toText.setAttribute("placeholder", "Translating...");
     statusText.innerText = "Translating...";
@@ -88,7 +89,6 @@ icons.forEach(icon => {
     icon.addEventListener("click", ({ target }) => {
         if (!fromText.value && !toText.value) return;
 
-        // Copy
         if (target.classList.contains("fa-copy")) {
             let textToCopy =
                 target.id === "from" ? fromText.value : toText.value;
