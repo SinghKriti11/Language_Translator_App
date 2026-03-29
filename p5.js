@@ -68,3 +68,18 @@ translateBtn.addEventListener("click", async () => {
                 toText.value = match.translation;
             }
         });
+
+        statusText.innerText = "Translation successful !";
+        statusText.className = "status";
+
+    } catch (error) {
+        console.error(error);
+
+        statusText.innerText = "❌ Error: Unable to translate";
+        statusText.className = "status error";
+        toText.setAttribute("placeholder", "Translation failed");
+
+    } finally {
+        translateBtn.disabled = false;
+    }
+});
