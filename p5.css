@@ -93,3 +93,14 @@ body{
 .icons i:hover{
   color: #5372F0;
 }
+
+.exchange{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  transition: 0.2s;
+}
