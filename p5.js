@@ -96,3 +96,18 @@ icons.forEach(icon => {
             navigator.clipboard.writeText(textToCopy);
             statusText.innerText = "Copied to clipboard ✅";
         }
+
+        else {
+            let utterance = new SpeechSynthesisUtterance(
+                target.id === "from" ? fromText.value : toText.value
+            );
+
+            utterance.lang =
+                target.id === "from"
+                    ? selectTag[0].value
+                    : selectTag[1].value;
+
+            speechSynthesis.speak(utterance);
+        }
+    });
+});
