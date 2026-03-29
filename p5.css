@@ -154,3 +154,7 @@ button:disabled{
 .status.error{
   color: #e74c3c;
 }
+
+.status.loading::after{
+  content: " ⏳";
+}
