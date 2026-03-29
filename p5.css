@@ -89,3 +89,7 @@ body{
   color: #555;
   transition: 0.2s;
 }
+
+.icons i:hover{
+  color: #5372F0;
+}
