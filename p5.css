@@ -161,7 +161,6 @@ button:disabled{
   content: " ⏳";
 }
 
-
 @media(max-width: 600px){
   .text-input{
     flex-direction: column;
