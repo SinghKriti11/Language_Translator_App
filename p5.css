@@ -163,3 +163,7 @@ button:disabled{
   .text-input{
     flex-direction: column;
   }
+  .text-input .to-text{
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
