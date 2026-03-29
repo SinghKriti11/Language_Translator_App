@@ -30,3 +30,9 @@ exchangeIcon.addEventListener("click", () => {
     selectTag[0].value = selectTag[1].value;
     selectTag[1].value = tempLang;
 });
+
+fromText.addEventListener("keyup", () => {
+    if (!fromText.value) {
+        toText.value = "";
+    }
+});
