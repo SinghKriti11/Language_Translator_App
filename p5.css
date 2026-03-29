@@ -36,7 +36,7 @@ body{
   overflow: hidden;
 }
 
-
+/* TEXT AREAS */
 .text-input{
   display: flex;
   border-bottom: 1px solid #ccc;
@@ -56,6 +56,7 @@ body{
   border-left: 1px solid #ccc;
 }
 
+/* CONTROLS FIXED */
 .controls{
   display: flex;
   align-items: center;
@@ -78,6 +79,7 @@ body{
   background: transparent;
 }
 
+/* ICONS FIX */
 .icons{
   display: flex;
   align-items: center;
@@ -95,6 +97,7 @@ body{
   color: #5372F0;
 }
 
+/* EXCHANGE BUTTON CENTERED */
 .exchange{
   display: flex;
   align-items: center;
@@ -110,6 +113,7 @@ body{
   color: #5372F0;
 }
 
+/* OPTIONAL DIVIDERS */
 .controls .row.from{
   border-right: 1px solid #ccc;
   padding-right: 10px;
@@ -120,6 +124,7 @@ body{
   padding-left: 10px;
 }
 
+/* BUTTON */
 button{
   width: 100%;
   padding: 14px;
@@ -142,6 +147,7 @@ button:disabled{
   cursor: not-allowed;
 }
 
+/* STATUS */
 .status{
   margin-top: 10px;
   font-size: 14px;
@@ -160,6 +166,7 @@ button:disabled{
   content: " ⏳";
 }
 
+/* RESPONSIVE */
 @media(max-width: 600px){
   .text-input{
     flex-direction: column;
