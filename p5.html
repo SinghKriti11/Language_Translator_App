@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="p5.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
@@ -17,6 +18,7 @@
         <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
         <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
       </div>
+
       <ul class="controls">
         <li class="row from">
           <div class="icons">
@@ -25,9 +27,11 @@
           </div>
           <select></select>
         </li>
+
         <li class="exchange">
           <i class="fas fa-exchange-alt"></i>
         </li>
+
         <li class="row to">
           <select></select>
           <div class="icons">
@@ -41,6 +45,9 @@
     <button>Translate Text</button>
     <p class="status"></p>
   </div>
+
   <script src="countries.js"></script>
+  <script src="p5.js"></script>
+  
 </body>
 </html>
