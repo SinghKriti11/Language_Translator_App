@@ -6,6 +6,7 @@ icons = document.querySelectorAll(".row i"),
 translateBtn = document.querySelector("button"),
 statusText = document.querySelector(".status");
 
+// Populate dropdowns
 selectTag.forEach((tag, id) => {
     for (let country_code in countries) {
         let selected =
@@ -21,6 +22,7 @@ selectTag.forEach((tag, id) => {
     }
 });
 
+// Swap languages
 exchangeIcon.addEventListener("click", () => {
     let tempText = fromText.value;
     fromText.value = toText.value;
@@ -31,12 +33,14 @@ exchangeIcon.addEventListener("click", () => {
     selectTag[1].value = tempLang;
 });
 
+// Clear translation when input empty
 fromText.addEventListener("keyup", () => {
     if (!fromText.value) {
         toText.value = "";
     }
 });
 
+// Translate function
 translateBtn.addEventListener("click", async () => {
     let text = fromText.value.trim(),
         translateFrom = selectTag[0].value,
@@ -44,6 +48,7 @@ translateBtn.addEventListener("click", async () => {
 
     if (!text) return;
 
+    // Loading UI
     toText.value = "";
     toText.setAttribute("placeholder", "Translating...");
     statusText.innerText = "Translating...";
@@ -85,10 +90,12 @@ translateBtn.addEventListener("click", async () => {
     }
 });
 
+// Copy & Speak
 icons.forEach(icon => {
     icon.addEventListener("click", ({ target }) => {
         if (!fromText.value && !toText.value) return;
 
+        // Copy
         if (target.classList.contains("fa-copy")) {
             let textToCopy =
                 target.id === "from" ? fromText.value : toText.value;
@@ -97,6 +104,7 @@ icons.forEach(icon => {
             statusText.innerText = "Copied to clipboard ✅";
         }
 
+        // Speech
         else {
             let utterance = new SpeechSynthesisUtterance(
                 target.id === "from" ? fromText.value : toText.value
