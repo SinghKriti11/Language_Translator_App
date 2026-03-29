@@ -48,3 +48,5 @@ translateBtn.addEventListener("click", async () => {
     statusText.innerText = "Translating...";
     statusText.className = "status loading";
     translateBtn.disabled = true;
+
+    let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
