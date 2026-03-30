@@ -56,7 +56,6 @@ body{
   border-left: 1px solid #ccc;
 }
 
-/* CONTROLS FIXED */
 .controls{
   display: flex;
   align-items: center;
