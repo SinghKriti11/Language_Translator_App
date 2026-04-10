@@ -1,4 +1,4 @@
-﻿# 🌍 Language Translator Web App!
+﻿# 🌍 Language Translator Web App
 
 A simple and interactive **Language Translator Web Application** built using **HTML, CSS, and JavaScript**.
 This app allows users to translate text between multiple languages using an external translation API.
