@@ -25,7 +25,6 @@ This app allows users to translate text between multiple languages using an exte
 
 ---
 
-
 ## ⚙️ How It Works
 
 1. Enter text in the input box
