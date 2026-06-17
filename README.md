@@ -7,7 +7,7 @@ This app allows users to translate text between multiple languages using an exte
 
 ## 🚀 Features
 
-*  Translate text between multiple languages
+*  Translate text between multiple languages 
 *  Swap languages instantly
 *  Copy translated text to clipboard
 *  Text-to-speech support for both input and output
