@@ -49,12 +49,7 @@ The app sends a request to the translation API and displays the result dynamical
 
 * **Clipboard Support**
   Easily copy text with one click
-
-
-
-
-
-
+ 
 
 
 
