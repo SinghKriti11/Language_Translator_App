@@ -13,7 +13,7 @@ body{
   justify-content: center;
   padding: 10px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #5372F0, #6a85f1);
+  background: linear-gradient(135deg, #5372F0, #6a85f1); 
 }
 
 .container{
